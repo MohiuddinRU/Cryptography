@@ -41,6 +41,7 @@ void input(string &originalText, int &key){
     getline(cin,originalText);
     cout<<"Enter the key = ";
     cin>>key;
+    key = key % 26;
 }
 
 
@@ -59,7 +60,7 @@ int main()
 
     string originalText, encryptedMessage,decryptedMessage;
     int key;
-    key = key % 26;
+   
     switch(option)
     {
         case 1:
